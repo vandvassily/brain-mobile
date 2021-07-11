@@ -1,5 +1,8 @@
 import { createNamespace } from '../utils';
 
+// components
+import Icon from '../icon';
+
 const [createComponent, bem] = createNamespace('nav-bar');
 
 const nav = {
@@ -7,6 +10,7 @@ const nav = {
     title: String,
     leftText: String,
     rightText: String,
+    leftArrow: Boolean,
   },
   methods: {
     hasRight() {
@@ -25,12 +29,18 @@ const nav = {
     },
   },
   render() {
-    const { leftText } = this;
+    const leftSlot = this.$slots.left;
+    const { leftText, leftArrow } = this;
     // 比较像react的写法了
-    const genLeft = (leftText) => {
-      if (leftText) {
-        return <span class={bem('text')}>{leftText}</span>;
+    const genLeft = (leftSlot, leftText, leftArrow) => {
+      if (leftSlot) {
+        return leftSlot;
       }
+
+      return [
+        leftArrow && <Icon icon-name="arrow-left" />,
+        leftText && <span class={bem('text')}>{leftText}</span>,
+      ];
     };
 
     return (
@@ -38,7 +48,7 @@ const nav = {
         <div class={bem('content')}>
           {leftText && (
             <div class={bem('left')} onClick={this.onLeftClick}>
-              {genLeft(leftText)}
+              {genLeft(leftSlot, leftText, leftArrow)}
             </div>
           )}
           <div class={[bem('title'), 'van-ellipsis']}>{this.title}</div>

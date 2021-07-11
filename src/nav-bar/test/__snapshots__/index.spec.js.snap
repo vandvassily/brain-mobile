@@ -1,8 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render 1`] = `
+exports[`left slot 1`] = `
 <div class="nav-bar">
   <div class="nav-bar__content">
+    <div class="nav-bar__left">
+      <div>left</div>
+    </div>
     <div class="nav-bar__title van-ellipsis"></div>
   </div>
 </div>

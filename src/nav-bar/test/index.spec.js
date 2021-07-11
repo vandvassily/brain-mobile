@@ -11,6 +11,19 @@ test('should render title slot and match snapshot', () => {
   expect(wrapper).toMatchSnapshot();
 });
 
+test('left slot', () => {
+  const wrapper = mount(NavBar, {
+    propsData: {
+      leftText: 'left',
+    },
+    slots: {
+      left: '<div>left</div>'
+    }
+  });
+
+  expect(wrapper).toMatchSnapshot();
+});
+
 test('should emit click-left event when clicking left text', () => {
   const wrapper = mount(NavBar, {
     propsData: {

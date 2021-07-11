@@ -1795,6 +1795,11 @@
     eslint-plugin-import "^2.20.2"
     eslint-plugin-vue "^6.2.2"
 
+"@vant/icons@^1.6.0":
+  version "1.6.0"
+  resolved "https://registry.nlark.com/@vant/icons/download/@vant/icons-1.6.0.tgz?cache=0&sync_timestamp=1621321922501&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40vant%2Ficons%2Fdownload%2F%40vant%2Ficons-1.6.0.tgz#3db7eb7f963f51a2a08676720d5af9c4c3512feb"
+  integrity sha1-Pbfrf5Y/UaKghnZyDVr5xMNRL+s=
+
 "@vant/markdown-loader@^2.5.0":
   version "2.5.0"
   resolved "https://registry.nlark.com/@vant/markdown-loader/download/@vant/markdown-loader-2.5.0.tgz#08cb57da975d2f47c009695ff515b48920e37bbd"

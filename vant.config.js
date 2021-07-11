@@ -34,7 +34,11 @@ module.exports = {
           },
           {
             path: 'nav-bar',
-            title: 'nav-bar 按钮',
+            title: 'NavBar 导航',
+          },
+          {
+            path: 'icon',
+            title: 'Icon 图标',
           },
         ],
       },

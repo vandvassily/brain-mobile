@@ -1,6 +1,11 @@
 import { createComponent } from './component';
-import { createBEM } from './bem';
+import { createBEM, BEM } from './bem';
 
-export function createNamespace(name: string) {
-  return [createComponent(name), createBEM(name)]
+type CreateNamespaceReturn = [
+  ReturnType<typeof createComponent>,
+  BEM,
+];
+
+export function createNamespace(name: string): CreateNamespaceReturn {
+  return [createComponent(name), createBEM(name)];
 }

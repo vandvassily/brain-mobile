@@ -56,5 +56,8 @@
   "browserslist": [
     "Android >= 4.0",
     "iOS >= 8"
-  ]
+  ],
+  "dependencies": {
+    "@vant/icons": "^1.6.0"
+  }
 }
