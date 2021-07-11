@@ -1,0 +1,1 @@
+export { createNamespace } from './create';
