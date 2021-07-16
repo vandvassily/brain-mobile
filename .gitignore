@@ -15,3 +15,7 @@ site
 
 # test
 test/coverage
+
+# other
+taiko
+convert.js

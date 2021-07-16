@@ -40,6 +40,14 @@ module.exports = {
             path: 'icon',
             title: 'Icon 图标',
           },
+          {
+            path: 'area',
+            title: 'area 选择',
+          },
+          {
+            path: 'cell',
+            title: 'cell',
+          },
         ],
       },
     ],

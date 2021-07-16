@@ -1,0 +1,25 @@
+@import '../style/var.less';
+
+.lt-cell {
+  position: relative;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  padding: @cell-vertical-padding @cell-horizontal-padding;
+  overflow: hidden;
+  color: @cell-text-color;
+  background-color: @cell-background-color;
+  font-size: @cell-font-size;
+  line-height: @cell-line-height;
+
+  &__title {
+    flex: 1;
+  }
+
+  &__left-icon,
+  &__right-icon {
+    height: @cell-line-height;
+    font-size: @cell-icon-size;
+    line-height: @cell-line-height;
+  }
+}

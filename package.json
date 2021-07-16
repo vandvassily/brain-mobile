@@ -1,8 +1,9 @@
 {
   "name": "brain-mobile",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
-  "main": "lib/brain-mobile.js",
+  "main": "lib/index.js",
+  "module": "es/index.js",
   "style": "lib/index.css",
   "files": [
     "lib",
@@ -48,16 +49,22 @@
   "stylelint": {
     "extends": [
       "@vant/stylelint-config"
-    ]
+    ],
+    "rules": {
+      "function-name-case": null
+    }
   },
   "prettier": {
-    "singleQuote": true
+    "singleQuote": true,
+    "trailingComma": "none"
   },
   "browserslist": [
     "Android >= 4.0",
     "iOS >= 8"
   ],
   "dependencies": {
-    "@vant/icons": "^1.6.0"
+    "@vant/icons": "^1.6.0",
+    "vant": "^2.12.24",
+    "xls-to-json": "^2.1.0"
   }
 }
