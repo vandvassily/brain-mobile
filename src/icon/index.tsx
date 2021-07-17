@@ -11,7 +11,7 @@ function isImage(url?: string): boolean {
   return url ? url.indexOf('/') !== -1 : false;
 }
 
-const nav = {
+const icon = {
   props: {
     iconName: String,
     tag: {
@@ -40,4 +40,4 @@ const nav = {
 };
 
 // 返回sfc组件，带有install方法
-export default createComponent(nav);
+export default createComponent(icon);

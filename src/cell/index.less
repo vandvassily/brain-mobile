@@ -1,4 +1,5 @@
 @import '../style/var.less';
+@import '../style/hairline.less';
 
 .lt-cell {
   position: relative;
@@ -12,8 +13,22 @@
   font-size: @cell-font-size;
   line-height: @cell-line-height;
 
-  &__title {
+  &::after {
+    .hairline-bottom(@cell-border-color, @padding-md, @padding-md);
+  }
+
+  &__title,
+  &__value {
     flex: 1;
+  }
+
+  &__value {
+    position: relative;
+    color: @cell-value-color;
+    overflow: hidden;
+    text-align: right;
+    vertical-align: middle;
+    word-wrap: break-word;
   }
 
   &__left-icon,

@@ -1,25 +1,30 @@
 import { createNamespace } from '../utils';
-import { VueConstructor } from 'vue';
 import { isDef } from '../utils/index';
+import { emit } from '../utils/functional';
 
 import Icon from '../icon';
 
 const [createComponent, bem] = createNamespace('lt-cell');
 
-const cell: VueConstructor = {
+const cell = {
   functional: true,
   props: {
     title: String,
     value: String,
     label: String,
     size: String,
-    icon: String
+    icon: String,
+    rightArrow: {
+      type: Boolean,
+      default: false
+    },
+    arrowDirection: String
   },
-  render(h, context) {
-    const { props, scopedSlots } = context;
-    const { title, icon } = props;
+  render(h, ctx) {
+    const { props, scopedSlots } = ctx;
+    const { title, icon, value } = props;
 
-    console.log(context);
+    console.log(ctx);
 
     function Title() {
       const showTitle = scopedSlots.title || isDef(title);
@@ -39,10 +44,45 @@ const cell: VueConstructor = {
       }
     }
 
+    function RightIcon() {
+      const rightIconSlot = scopedSlots['right-icon'];
+      if (rightIconSlot) {
+        return rightIconSlot();
+      }
+
+      const { rightArrow, arrowDirection } = props;
+      if (rightArrow) {
+        return (
+          <Icon
+            class={bem('right-icon')}
+            iconName={arrowDirection ? `arrow-${arrowDirection}` : 'arrow'}
+          />
+        );
+      }
+    }
+
+    function Value() {
+      const showValue = scopedSlots.default || isDef(value);
+
+      if (showValue) {
+        return (
+          <div class={bem('value')}>
+            {scopedSlots.default ? scopedSlots.default() : <span>{value}</span>}
+          </div>
+        );
+      }
+    }
+
+    function onClick(event: Event) {
+      emit(ctx, 'click', event);
+    }
+
     return (
-      <div class={bem()}>
+      <div class={bem()} onClick={onClick}>
         {LeftIcon()}
         {Title()}
+        {Value()}
+        {RightIcon()}
       </div>
     );
   }

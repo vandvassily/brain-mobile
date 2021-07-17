@@ -11,7 +11,7 @@ function install(Vue) {
 }
 
 export function createComponent(name: string) {
-  return function (sfc: VantComponentOptions) {
+  return function (sfc: VantComponentOptions): VantComponentOptions{
     sfc.name = name;
     sfc.install = install;
 

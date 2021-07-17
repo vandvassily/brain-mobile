@@ -42,11 +42,11 @@ module.exports = {
           },
           {
             path: 'area',
-            title: 'area 选择',
+            title: 'Area 选择',
           },
           {
             path: 'cell',
-            title: 'cell',
+            title: 'Cell 单元格',
           },
         ],
       },
