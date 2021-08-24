@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+  },
+  "include": [
+    "types/**/*",
+    "src/**/*",
+  ],
+  "exclude": [
+    "**/*.spec.ts",
+    "**/*.spec.js",
+    "node_modules"
+  ]
+}

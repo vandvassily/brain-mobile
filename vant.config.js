@@ -2,11 +2,11 @@ module.exports = {
   name: 'brain-mobile',
   build: {
     css: {
-      preprocessor: 'less',
+      preprocessor: 'less'
     },
     site: {
-      publicPath: '/brain-mobile/',
-    },
+      publicPath: '/brain-mobile/'
+    }
   },
   site: {
     title: 'brain-mobile',
@@ -17,39 +17,48 @@ module.exports = {
         items: [
           {
             path: 'home',
-            title: '介绍',
+            title: '介绍'
           },
           {
             path: 'quickstart',
-            title: '快速上手',
-          },
-        ],
+            title: '快速上手'
+          }
+        ]
       },
       {
         title: '基础组件',
         items: [
           {
             path: 'demo-button',
-            title: 'DemoButton 按钮',
+            title: 'DemoButton 按钮'
           },
           {
             path: 'nav-bar',
-            title: 'NavBar 导航',
+            title: 'NavBar 导航'
           },
           {
             path: 'icon',
-            title: 'Icon 图标',
+            title: 'Icon 图标'
           },
           {
             path: 'area',
-            title: 'Area 选择',
+            title: 'Area 选择'
           },
           {
             path: 'cell',
-            title: 'Cell 单元格',
-          },
-        ],
+            title: 'Cell 单元格'
+          }
+        ]
       },
-    ],
-  },
+      {
+        title: '业务组件',
+        items: [
+          {
+            path: 'address-edit',
+            title: 'address-edit 地址编辑'
+          }
+        ]
+      }
+    ]
+  }
 };

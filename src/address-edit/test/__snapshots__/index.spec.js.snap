@@ -1,0 +1,348 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`create a AddressEdit 1`] = `
+<div>
+  <form class="van-form">
+    <div class="edit-area">
+      <div class="van-cell van-field">
+        <div class="van-cell__title van-field__label"><span>收件人：</span></div>
+        <div class="van-cell__value van-field__value">
+          <div class="van-field__body"><input type="text" name="name" placeholder="请输入收件人姓名" class="van-field__control"></div>
+        </div>
+      </div>
+      <div class="van-cell van-field">
+        <div class="van-cell__title van-field__label"><span>手机号码：</span></div>
+        <div class="van-cell__value van-field__value">
+          <div class="van-field__body"><input type="tel" name="phone" placeholder="请输入收件人手机号码" class="van-field__control"></div>
+        </div>
+      </div>
+      <div class="van-cell van-field">
+        <div class="van-cell__title van-field__label"><span>所在地区：</span></div>
+        <div class="van-cell__value van-field__value">
+          <div class="van-field__body"><input type="text" name="region" readonly="readonly" placeholder="请输入省/市/区" class="van-field__control">
+            <div class="van-field__right-icon"><i class="van-icon van-icon-arrow">
+                <!---->
+              </i></div>
+          </div>
+        </div>
+      </div>
+      <div class="van-cell van-field">
+        <div class="van-cell__title van-field__label"><span>详细地址：</span></div>
+        <div class="van-cell__value van-field__value">
+          <div class="van-field__body"><input type="text" name="address" placeholder="请输入详细地址" class="van-field__control"></div>
+        </div>
+      </div>
+    </div>
+  </form>
+  <div class="save"><button class="van-button van-button--info van-button--large van-button--round">
+      <div class="van-button__content"><span class="van-button__text">保存</span></div>
+    </button></div>
+  <!---->
+</div>
+`;
+
+exports[`create a AddressEdit with props 1`] = `
+<div>
+  <form class="van-form">
+    <div class="edit-area">
+      <div class="van-cell van-field">
+        <div class="van-cell__title van-field__label"><span>收件人：</span></div>
+        <div class="van-cell__value van-field__value">
+          <div class="van-field__body"><input type="text" name="name" placeholder="请输入收件人姓名" class="van-field__control"></div>
+        </div>
+      </div>
+      <div class="van-cell van-field">
+        <div class="van-cell__title van-field__label"><span>手机号码：</span></div>
+        <div class="van-cell__value van-field__value">
+          <div class="van-field__body"><input type="tel" name="phone" placeholder="请输入收件人手机号码" class="van-field__control"></div>
+        </div>
+      </div>
+      <div class="van-cell van-field">
+        <div class="van-cell__title van-field__label"><span>所在地区：</span></div>
+        <div class="van-cell__value van-field__value">
+          <div class="van-field__body"><input type="text" name="region" readonly="readonly" placeholder="请输入省/市/区" class="van-field__control">
+            <div class="van-field__right-icon"><i class="van-icon van-icon-arrow">
+                <!---->
+              </i></div>
+          </div>
+        </div>
+      </div>
+      <div class="van-cell van-field">
+        <div class="van-cell__title van-field__label"><span>详细地址：</span></div>
+        <div class="van-cell__value van-field__value">
+          <div class="van-field__body"><input type="text" name="address" placeholder="请输入详细地址" class="van-field__control"></div>
+        </div>
+      </div>
+    </div>
+  </form>
+  <div class="save"><button class="van-button van-button--info van-button--large van-button--round">
+      <div class="van-button__content"><span class="van-button__text">保存</span></div>
+    </button></div>
+  <!---->
+</div>
+`;
+
+exports[`show area component 1`] = `
+<div showpostal="true" showsetdefault="true">
+  <form class="van-form">
+    <div class="edit-area">
+      <div class="van-cell van-field">
+        <div class="van-cell__title van-field__label"><span>收件人：</span></div>
+        <div class="van-cell__value van-field__value">
+          <div class="van-field__body"><input type="text" name="name" placeholder="请输入收件人姓名" class="van-field__control"></div>
+        </div>
+      </div>
+      <div class="van-cell van-field">
+        <div class="van-cell__title van-field__label"><span>手机号码：</span></div>
+        <div class="van-cell__value van-field__value">
+          <div class="van-field__body"><input type="tel" name="phone" placeholder="请输入收件人手机号码" class="van-field__control"></div>
+        </div>
+      </div>
+      <div class="van-cell van-field">
+        <div class="van-cell__title van-field__label"><span>所在地区：</span></div>
+        <div class="van-cell__value van-field__value">
+          <div class="van-field__body"><input type="text" name="region" readonly="readonly" placeholder="请输入省/市/区" class="van-field__control">
+            <div class="van-field__right-icon"><i class="van-icon van-icon-arrow">
+                <!---->
+              </i></div>
+          </div>
+        </div>
+      </div>
+      <div class="van-cell van-field">
+        <div class="van-cell__title van-field__label"><span>详细地址：</span></div>
+        <div class="van-cell__value van-field__value">
+          <div class="van-field__body"><input type="text" name="address" placeholder="请输入详细地址" class="van-field__control"></div>
+        </div>
+      </div>
+    </div>
+  </form>
+  <div class="save"><button class="van-button van-button--info van-button--large van-button--round">
+      <div class="van-button__content"><span class="van-button__text">保存</span></div>
+    </button></div>
+  <div class="van-overlay" style="z-index: 2003;" name="van-fade"></div>
+  <div class="van-popup van-popup--bottom" name="van-popup-slide-bottom" style="z-index: 2004;">
+    <div class="van-picker van-area">
+      <div class="van-picker__toolbar"><button type="button" class="van-picker__cancel">取消</button><button type="button" class="van-picker__confirm">确认</button></div>
+      <!---->
+      <div class="van-picker__columns" style="height: 264px;">
+        <div class="van-picker-column">
+          <ul class="van-picker-column__wrapper" style="transform: translate3d(0, 22px, 0); transition-duration: 0ms; transition-property: none;">
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">北京市</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">天津市</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item van-picker-column__item--selected" style="height: 44px;">
+              <div class="van-ellipsis">河北省</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">山西省</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">内蒙古</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">辽宁省</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">吉林省</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">黑龙江省</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">上海市</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">江苏省</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">浙江省</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">安徽省</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">福建省</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">江西省</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">山东省</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">河南省</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">湖北省</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">湖南省</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">广东省</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">广西壮族</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">海南省</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">重庆</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">四川省</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">贵州省</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">云南省</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">西藏</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">陕西省</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">甘肃省</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">青海省</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">宁夏</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">新疆</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">台湾省</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">香港</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">澳门</div>
+            </li>
+          </ul>
+        </div>
+        <div class="van-picker-column">
+          <ul class="van-picker-column__wrapper" style="transform: translate3d(0, 110px, 0); transition-duration: 0ms; transition-property: none;">
+            <li role="button" tabindex="0" class="van-picker-column__item van-picker-column__item--selected" style="height: 44px;">
+              <div class="van-ellipsis">石家庄市</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">唐山市</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">秦皇岛市</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">邯郸市</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">邢台市</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">保定市</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">张家口市</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">承德市</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">沧州市</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">廊坊市</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">衡水市</div>
+            </li>
+          </ul>
+        </div>
+        <div class="van-picker-column">
+          <ul class="van-picker-column__wrapper" style="transform: translate3d(0, 110px, 0); transition-duration: 0ms; transition-property: none;">
+            <li role="button" tabindex="0" class="van-picker-column__item van-picker-column__item--selected" style="height: 44px;">
+              <div class="van-ellipsis">长安区</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">桥西区</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">新华区</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">井陉矿区</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">裕华区</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">藁城区</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">鹿泉区</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">栾城区</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">井陉县</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">正定县</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">行唐县</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">灵寿县</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">高邑县</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">深泽县</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">赞皇县</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">无极县</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">平山县</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">元氏县</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">赵县</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">辛集市</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">晋州市</div>
+            </li>
+            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;">
+              <div class="van-ellipsis">新乐市</div>
+            </li>
+          </ul>
+        </div>
+        <div class="van-picker__mask" style="background-size: 100% 110px;"></div>
+        <div class="van-hairline-unset--top-bottom van-picker__frame" style="height: 44px;"></div>
+      </div>
+      <!---->
+    </div>
+  </div>
+</div>
+`;

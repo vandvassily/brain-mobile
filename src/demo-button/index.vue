@@ -5,16 +5,18 @@
 </template>
 
 <script>
+import { Card } from 'vant';
+
 export default {
   name: 'demo-button',
-
+  components: { [Card.name]: Card },
   props: {
     color: String,
     type: {
       type: String,
-      default: 'primary',
-    },
-  },
+      default: 'primary'
+    }
+  }
 };
 </script>
 

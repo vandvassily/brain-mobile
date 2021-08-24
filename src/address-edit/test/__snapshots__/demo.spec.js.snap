@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders demo correctly 1`] = `
+<div>
+  <div>
+    <form class="van-form">
+      <div class="edit-area">
+        <div class="van-cell van-field">
+          <div class="van-cell__title van-field__label"><span>收件人：</span></div>
+          <div class="van-cell__value van-field__value">
+            <div class="van-field__body"><input type="text" name="name" placeholder="请输入收件人姓名" class="van-field__control"></div>
+          </div>
+        </div>
+        <div class="van-cell van-field">
+          <div class="van-cell__title van-field__label"><span>手机号码：</span></div>
+          <div class="van-cell__value van-field__value">
+            <div class="van-field__body"><input type="tel" name="phone" placeholder="请输入收件人手机号码" class="van-field__control"></div>
+          </div>
+        </div>
+        <div class="van-cell van-field">
+          <div class="van-cell__title van-field__label"><span>所在地区：</span></div>
+          <div class="van-cell__value van-field__value">
+            <div class="van-field__body"><input type="text" name="region" readonly="readonly" placeholder="请输入省/市/区" class="van-field__control">
+              <div class="van-field__right-icon"><i class="van-icon van-icon-arrow">
+                  <!---->
+                </i></div>
+            </div>
+          </div>
+        </div>
+        <div class="van-cell van-field">
+          <div class="van-cell__title van-field__label"><span>详细地址：</span></div>
+          <div class="van-cell__value van-field__value">
+            <div class="van-field__body"><input type="text" name="address" placeholder="请输入详细地址" class="van-field__control"></div>
+          </div>
+        </div>
+      </div>
+    </form>
+    <div class="tips">*地址信息将被用于购买产品寄送使用，请认真填写！</div>
+    <div>这是默认 slot</div>
+    <div class="save"><button class="van-button van-button--info van-button--large van-button--round">
+        <div class="van-button__content"><span class="van-button__text">保存</span></div>
+      </button></div>
+    <!---->
+  </div>
+</div>
+`;
