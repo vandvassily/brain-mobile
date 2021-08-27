@@ -6,6 +6,7 @@
         @confirm="onConfirm"
         @change="onChange"
         @cancel="onCancel"
+        :title="title"
       />
     </demo-block>
   </demo-section>
@@ -13,19 +14,17 @@
 
 <script>
 import areaList from './area';
-import { Area } from 'vant';
+import Area from '..';
 
 export default {
   components: { [Area.name]: Area },
   data() {
     this.areaList = areaList;
     return {
-      title: 123
+      title: '标题'
     };
   },
-  created() {
-    console.log(this);
-  },
+  created() {},
   methods: {
     onChange(...args) {
       console.log(args);

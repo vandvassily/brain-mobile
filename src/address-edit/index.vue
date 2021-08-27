@@ -73,7 +73,7 @@ const defaultAddressData = {
 };
 
 export default {
-  name: 'address-edit',
+  name: 'lt-address-edit',
   components: {
     [Form.name]: Form,
     [Field.name]: Field,
@@ -115,7 +115,8 @@ export default {
   },
   methods: {
     onSubmit(values) {
-      this.$emit('submit', values);
+      const { province, city, district } = this.data;
+      this.$emit('submit', [values, [province, city, district]]);
     },
     onFailed(event) {
       this.$emit('failed', event);
@@ -131,11 +132,15 @@ export default {
       values.forEach(item => {
         item && (region += item.name);
       });
-      this.data.province = values[0].name;
-      this.data.city = values[1].name;
-      this.data.district = (values[2] && values[2].name) || '';
+      const province = values[0].name;
+      const city = values[1].name;
+      const district = (values[2] && values[2].name) || '';
+
+      this.data.province = province;
+      this.data.city = city;
+      this.data.district = district;
       this.showAreaPop = false;
-      this.$emit('change-area', values);
+      this.$emit('change-area', [province, city, district]);
     },
     onCancel() {
       this.showAreaPop = false;
@@ -221,16 +226,9 @@ export default {
   position: relative;
 }
 
-.tips {
-  margin-top: 36px;
-  text-align: center;
-  font-size: 24px;
-  color: #ff3e3e;
-}
-
 .save {
   position: relative;
-  padding: 24px;
+  padding: 15px;
 }
 
 .edit-area {

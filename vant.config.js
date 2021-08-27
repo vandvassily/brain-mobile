@@ -54,8 +54,20 @@ module.exports = {
         title: '业务组件',
         items: [
           {
+            path: 'address-card',
+            title: 'address-card 地址卡片'
+          },
+          {
             path: 'address-edit',
             title: 'address-edit 地址编辑'
+          },
+          {
+            path: 'gift-card',
+            title: 'gift-card 赠品卡片'
+          },
+          {
+            path: 'gift-popup',
+            title: 'gift-popup 赠品弹框'
           }
         ]
       }

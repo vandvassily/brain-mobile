@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`create a GiftCard 1`] = `
+<div class="gift-item"><img src="" alt="" class="gift-item-img">
+  <div class="gift-content"><span class="gift-title">【赠品】&nbsp;</span> <span class="gift-nums">X1</span></div>
+</div>
+`;

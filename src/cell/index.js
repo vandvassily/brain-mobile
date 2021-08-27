@@ -73,7 +73,7 @@ const cell = {
       }
     }
 
-    function onClick(event: Event) {
+    function onClick(event) {
       emit(ctx, 'click', event);
     }
 

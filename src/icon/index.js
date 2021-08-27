@@ -7,7 +7,7 @@ const [createComponent] = createNamespace('icon');
 const VantIconPrefix = 'van-icon';
 const bem = createBEM(VantIconPrefix);
 
-function isImage(url?: string): boolean {
+function isImage(url) {
   return url ? url.indexOf('/') !== -1 : false;
 }
 
@@ -16,17 +16,17 @@ const icon = {
     iconName: String,
     tag: {
       type: String,
-      default: 'i',
+      default: 'i'
     },
     size: [Number, String],
-    image: String,
+    image: String
   },
   methods: {},
   render() {
     const { iconName, color, size, image } = this;
     const ImageUrl = isImage(image);
 
-    const name = VantIconPrefix + '-' + iconName
+    const name = VantIconPrefix + '-' + iconName;
 
     return (
       <this.tag
@@ -36,7 +36,7 @@ const icon = {
         {ImageUrl && <img class={bem('image')} src={image} />}
       </this.tag>
     );
-  },
+  }
 };
 
 // 返回sfc组件，带有install方法

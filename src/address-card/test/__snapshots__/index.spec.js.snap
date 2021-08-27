@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`create a AddressCard 1`] = `
+<div class="address-card">
+  <div class="card-info"><i class="van-icon van-icon-location-o">
+      <!---->
+    </i> <span></span> <span></span></div>
+  <div class="address-info"><span></span></div>
+  <div class="edit-icon"><i class="van-icon van-icon-edit">
+      <!---->
+    </i></div>
+</div>
+`;
+
+exports[`create a AddressCard with props 1`] = `
+<div class="address-card">
+  <div class="card-info"><i class="van-icon van-icon-location-o">
+      <!---->
+    </i> <span>vassily</span> <span>13000000000</span></div>
+  <div class="address-info"><span>北京市东城区</span></div>
+  <div class="edit-icon"><i class="van-icon van-icon-edit">
+      <!---->
+    </i></div>
+</div>
+`;

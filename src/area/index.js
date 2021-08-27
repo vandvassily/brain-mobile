@@ -7,8 +7,9 @@ export default createComponent({
   props: {
     areaList: {
       type: Object,
-      default: () => ({}),
+      default: () => ({})
     },
+    title: String
   },
   methods: {
     onConfirm(...args) {
@@ -19,7 +20,7 @@ export default createComponent({
     },
     onCancel(...args) {
       this.$emit('cancel', ...args);
-    },
+    }
   },
   render() {
     return (
@@ -29,8 +30,8 @@ export default createComponent({
         onChange={this.onChange}
         onCancel={this.onCancel}
         class={bem()}
-        title="测试"
+        title={this.title}
       />
     );
-  },
+  }
 });

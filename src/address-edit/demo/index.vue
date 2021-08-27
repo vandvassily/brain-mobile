@@ -1,6 +1,6 @@
 <template>
   <demo-section>
-    <address-edit
+    <lt-address-edit
       :address-info="addressInfo"
       @failed="onFailed"
       @submit="onSubmit"
@@ -12,7 +12,7 @@
       <template slot="tip">
         <div class="tips">*地址信息将被用于购买产品寄送使用，请认真填写！</div>
       </template>
-    </address-edit>
+    </lt-address-edit>
   </demo-section>
 </template>
 
@@ -40,3 +40,12 @@ export default {
   }
 };
 </script>
+
+<style lang="less">
+.tips {
+  margin-top: 36px;
+  text-align: center;
+  font-size: 24px;
+  color: #ff3e3e;
+}
+</style>
